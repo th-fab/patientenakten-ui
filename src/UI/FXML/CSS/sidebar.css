@@ -1,0 +1,12 @@
+.tile:hover {
+    -fx-border-color: WHITE;
+    -fx-border-width: 5;
+    -fx-text-fill: WHITE;
+    -fx-font-family: Comfortaa SemiBold;
+    -fx-font-size: 30;
+}
+
+.Title {
+    -fx-font-family: Comfortaa SemiBold;
+    -fx-font-size: 37;
+}

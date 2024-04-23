@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="anlegen.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controllers.ManagementController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <VBox prefHeight="45.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="65.0" prefWidth="1280.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="99.0" />
+                        <Label fx:id="nummerLabel" style="-fx-font-family: Comfortaa SemiBold;" text="Nummer">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nameLabel" style="-fx-font-family: Comfortaa SemiBold;" text="Name">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nachnameLabel" style="-fx-font-family: Comfortaa SemiBold;" text="Nachname">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <MFXButton fx:id="deletePatientButton" buttonType="RAISED" disable="true" onAction="#removePatient" style="-fx-background-radius: 10; -fx-background-color: #ff0000; -fx-text-fill: #ffffff;" text="Entfernen" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Comfortaa SemiBold" size="13.0" />
+                           </font>
+                        </MFXButton>
+                        <MFXButton fx:id="viewStatsButton" buttonType="RAISED" disable="true" onAction="#viewStats" style="-fx-background-radius: 10;" text="Statistiken">
+                           <font>
+                              <Font name="Comfortaa SemiBold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </MFXButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="1.0" prefWidth="1280.0" style="-fx-background-color: #000000;">
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="655.0" prefWidth="912.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="99.0" layoutY="21.0" style="-fx-font-family: Comfortaa SemiBold;" text="Patient anlegen:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="94.0" style="-fx-font-family: Comfortaa SemiBold;" text="Nummer:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="174.0" style="-fx-font-family: Comfortaa SemiBold;" text="Vorname:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="77.0" layoutY="252.0" style="-fx-font-family: Comfortaa SemiBold;" text="Nachname:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="numberTextField" alignment="CENTER" layoutX="201.0" layoutY="77.0" prefHeight="51.0" prefWidth="361.0" styleClass="txt">
+                     <font>
+                        <Font size="20.0" />
+                        <Font name="Comfortaa SemiBold" />
+                     </font></TextField>
+                  <TextField fx:id="vornameTextField" alignment="CENTER" layoutX="200.0" layoutY="157.0" prefHeight="51.0" prefWidth="361.0" styleClass="txt">
+                     <font>
+                        <Font name="Comfortaa SemiBold" />
+                        <Font size="20.0" />
+                     </font></TextField>
+                  <TextField fx:id="nachnameTextField" alignment="CENTER" layoutX="201.0" layoutY="235.0" prefHeight="51.0" prefWidth="360.0" styleClass="txt">
+                     <font>
+
+                        <Font size="20.0" />
+                     </font></TextField>
+                  <MFXButton fx:id="buttonCheck" layoutX="200.0" layoutY="322.0" onAction="#checkData" prefHeight="64.0" prefWidth="119.0" style="-fx-font-family: Comfortaa SemiBold; -fx-background-color: #4080fa; -fx-text-fill: #ffffff; -fx-background-radius: 12;" text="Prüfen" />
+                  <MFXButton fx:id="buttonAnlegen" layoutX="341.0" layoutY="322.0" onAction="#createPatient" prefHeight="64.0" prefWidth="119.0" style="-fx-font-family: Comfortaa SemiBold; -fx-background-color: #06c71c; -fx-text-fill: #ffffff; -fx-background-radius: 12;" text="Anlegen" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="46.0" />
+            <Label style="-fx-font-family: Comfortaa SemiBold;" text="Patient suchen:">
+               <HBox.margin>
+                  <Insets top="40.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldSuchen" prefHeight="51.0" prefWidth="228.0" styleClass="txt">
+               <HBox.margin>
+                  <Insets left="10.0" top="25.0" />
+               </HBox.margin>
+            </TextField>
+            <MFXButton fx:id="buttonSuchen" onAction="#lookupPatient" prefHeight="51.0" prefWidth="119.0" style="-fx-font-family: Comfortaa SemiBold; -fx-background-radius: 12;" text="Suchen">
+               <HBox.margin>
+                  <Insets top="25.0" />
+               </HBox.margin>
+            </MFXButton>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

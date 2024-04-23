@@ -1,0 +1,21 @@
+.dashboard-element-text {
+    -fx-font-family: Comfortaa SemiBold;
+    -fx-font-size: 20;
+}
+
+.dashboard-elememt {
+    -fx-border-width: 5;
+    -fx-border-color: #20738a;
+    -fx-border-radius: 20;
+}
+
+.dashboard-elememt:hover {
+    -fx-background-color: #20738a;
+    -fx-background-radius: 20;
+}
+
+.dashboard-elememt:hover > .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20;
+    -fx-underline: true;
+}

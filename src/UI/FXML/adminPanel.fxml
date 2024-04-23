@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-border-radius: 10;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controllers.AdminPanelController">
+   <top>
+      <BorderPane prefHeight="98.0" prefWidth="1280.0" style="-fx-background-color: #20738a; -fx-border-color: #ffffff; -fx-border-width: 4;" BorderPane.alignment="CENTER">
+         <center>
+            <Label style="-fx-font-family: Comfortaa SemiBold;" text="Administration" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+   <left>
+      <VBox prefHeight="702.0" prefWidth="300.0"
+            style="-fx-background-color: #20738a; -fx-border-width: 3; -fx-border-radius: 0; -fx-border-color: #ffffff;"
+            stylesheets="UI/FXML/CSS/sidebar.css" BorderPane.alignment="CENTER">
+         <Pane prefHeight="118.0" prefWidth="300.0"/>
+         <Pane fx:id="dashboardTile" prefHeight="118.0" style="-fx-background-radius: 10; -fx-border-radius: 10;"
+               styleClass="tile" stylesheets="UI/FXML/CSS/sidebar.css">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </VBox.margin>
+            <Label fx:id="dashboardLabel" layoutX="60.0" layoutY="41.0" style="-fx-font-family: Comfortaa SemiBold;"
+                   styleClass="label" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="30.0"/>
+               </font>
+            </Label>
+         </Pane>
+         <Pane fx:id="managementTile" prefHeight="118.0" style="-fx-background-radius: 10; -fx-border-radius: 10;"
+               styleClass="tile" stylesheets="UI/FXML/CSS/sidebar.css">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </VBox.margin>
+            <Label fx:id="managementLabel" alignment="CENTER" layoutX="43.0" layoutY="23.0"
+                   style="-fx-font-family: Comfortaa SemiBold;" styleClass="label" stylesheets="UI/FXML/CSS/sidebar.css"
+                   text="Patienten&#10;Management" textAlignment="CENTER" textFill="#f8f0f0">
+               <font>
+                  <Font size="30.0"/>
+               </font>
+            </Label>
+         </Pane>
+         <Pane fx:id="statsTile" prefHeight="118.0" style="-fx-background-radius: 10; -fx-border-radius: 10;"
+               styleClass="tile" stylesheets="UI/FXML/CSS/sidebar.css">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </VBox.margin>
+            <Label fx:id="statsLabel" layoutX="62.0" layoutY="41.0" style="-fx-font-family: Comfortaa SemiBold;"
+                   styleClass="label" text="Statistiken" textFill="WHITE">
+               <font>
+                  <Font size="30.0"/>
+               </font>
+            </Label>
+         </Pane>
+      </VBox>
+   </left>
+   <center>
+      <Pane fx:id="adminPanelContentPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controllers.FeedbackController">
+   <top>
+      <Label style="-fx-font-family: Comfortaa SemiBold; -fx-font-size: 20;" text="Hier können Sie Ihre Anregungen, Verbesserungsvorschläge&#10;oder generelle Rückmeldung abgeben. Falls nicht, das Feld leer lassen.&#10;" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <TextArea fx:id="feedbackText" prefHeight="200.0" prefWidth="200.0" style="-fx-font-family: Comfortaa SemiBold; -fx-font-size: 30;" wrapText="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Comfortaa SemiBold" size="20.0" />
+         </font>
+      </TextArea>
+   </center>
+</BorderPane>

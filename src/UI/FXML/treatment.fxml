@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane stylesheets="ratingselector.css" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controllers.TreatmentController">
+   <top>
+      <BorderPane prefHeight="150.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label text="Bitte bewerten Sie, wie Sie&#10;Ihre Behandlung empfinden" style="-fx-font-family: Comfortaa SemiBold" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Comfortaa SemiBold" size="25.0" />
+               </font>
+            </Label>
+         </center>
+         <bottom>
+            <Pane prefHeight="62.0" prefWidth="640.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </top>
+   <center>
+      <HBox fx:id="hbox_select" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+
+            <BorderPane fx:id="bp_sehr_gut" maxWidth="300.0" prefHeight="200.0" prefWidth="200.0" styleClass="selectorcard" HBox.hgrow="ALWAYS">
+               <bottom>
+                  <Label text="Sehr gut" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="13.0" />
+                     </font>
+                  </Label>
+               </bottom>
+               <center>
+                  <ImageView fx:id="imViewStellar" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER"
+                  />
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="bp_gut" maxWidth="300.0" prefHeight="200.0" prefWidth="200.0" styleClass="selectorcard" HBox.hgrow="ALWAYS">
+               <bottom>
+                  <Label text="Gut" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="13.0" />
+                     </font>
+                  </Label>
+               </bottom>
+               <center>
+                  <ImageView fx:id="imViewGood" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER"
+                  />
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="bp_mittel" maxWidth="300.0" prefHeight="200.0" prefWidth="200.0" styleClass="selectorcard" HBox.hgrow="ALWAYS">
+               <bottom>
+                  <Label text="Mittel" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="13.0" />
+                     </font>
+                  </Label>
+               </bottom>
+               <center>
+                  <ImageView fx:id="imViewMid" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER"
+                  />
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="bp_schlecht" maxWidth="300.0" prefHeight="200.0" prefWidth="200.0" styleClass="selectorcard" HBox.hgrow="ALWAYS">
+               <bottom>
+                  <Label text="Schlecht" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="13.0" />
+                     </font>
+                  </Label>
+               </bottom>
+               <center>
+                  <ImageView fx:id="imViewBad" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER"
+                  />
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="bp_sehr_schlecht" maxWidth="300.0" prefHeight="200.0" prefWidth="200.0" styleClass="selectorcard" HBox.hgrow="ALWAYS">
+               <bottom>
+                  <Label text="Sehr schlecht" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="13.0" />
+                     </font>
+                  </Label>
+               </bottom>
+               <center>
+                  <ImageView fx:id="imViewVeryBad" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER"
+                  />
+               </center>
+            </BorderPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <bottom>
+      <Pane prefHeight="135.0" prefWidth="640.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

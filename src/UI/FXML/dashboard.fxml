@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="dashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controllers.DashboardController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="125.0" prefWidth="900.0" styleClass="dashboard-elememt">
+               <left>
+                  <Label styleClass="dashboard-element-text" text="Datum" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="200.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </left>
+               <center>
+                  <Label fx:id="dateLabel" styleClass="dashboard-element-text" text="Label" BorderPane.alignment="CENTER_RIGHT">
+                     <BorderPane.margin>
+                        <Insets right="200.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </center>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </BorderPane>
+            <BorderPane prefHeight="125.0" prefWidth="900.0" styleClass="dashboard-elememt">
+               <left>
+                  <Label styleClass="dashboard-element-text" text="Angelegte Patienten" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="200.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </left>
+               <center>
+                  <Label fx:id="patientsLabel" styleClass="dashboard-element-text" text="Label" BorderPane.alignment="CENTER_RIGHT">
+                     <BorderPane.margin>
+                        <Insets right="200.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </center>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </BorderPane>
+            <BorderPane prefHeight="125.0" prefWidth="900.0" styleClass="dashboard-elememt">
+               <left>
+                  <Label styleClass="dashboard-element-text" text="Bewertungen - gesamt" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="200.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </left>
+               <center>
+                  <Label fx:id="allRatingsLabel" styleClass="dashboard-element-text" text="Label" BorderPane.alignment="CENTER_RIGHT">
+                     <BorderPane.margin>
+                        <Insets right="200.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </center>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </BorderPane>
+            <BorderPane prefHeight="125.0" prefWidth="900.0" styleClass="dashboard-elememt">
+               <left>
+                  <Label styleClass="dashboard-element-text" text="Bewertungen - heute" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="200.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </left>
+               <center>
+                  <Label fx:id="todayRatingsLabel" styleClass="dashboard-element-text" text="Label" BorderPane.alignment="CENTER_RIGHT">
+                     <BorderPane.margin>
+                        <Insets right="200.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </center>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </BorderPane>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <BorderPane prefHeight="107.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <center>
+            <MFXButton fx:id="refreshButton" onAction="#updateLabels" buttonType="RAISED" depthLevel="LEVEL5" prefHeight="33.0" prefWidth="280.0" style="-fx-background-color: #5391db; -fx-text-fill: #ffffff; -fx-background-radius: 10; -fx-font-size: 18;" text="Refresh" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </bottom>
+</BorderPane>

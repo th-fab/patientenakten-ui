@@ -1,0 +1,28 @@
+.txt {
+    -fx-font-family: Comfortaa SemiBold;
+    -fx-font-size: 26;
+    -fx-text-overrun: CENTER;
+    -fx-text-alignment: CENTER;
+    -fx-alignment: CENTER;
+    -fx-background-color: white;
+    -fx-text-fill: #000000;
+    -fx-border-color: #0000ff;
+    -fx-border-width: 2;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.error {
+    -fx-font-family: Comfortaa SemiBold;
+    -fx-font-size: 26;
+    -fx-text-overrun: CENTER;
+    -fx-text-alignment: CENTER;
+    -fx-alignment: CENTER;
+    -fx-background-color: #ff0000;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #0000ff;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+
+}

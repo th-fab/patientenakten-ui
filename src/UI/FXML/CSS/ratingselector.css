@@ -1,0 +1,28 @@
+.selectorcard {
+    -fx-border-radius: 20;
+    -fx-border-color: #5391db;
+    -fx-border-width: 5;
+}
+
+.selectorcard > .label {
+    -fx-font-size: 20;
+    -fx-font-family: Comfortaa SemiBold;
+}
+
+.selected-card {
+    -fx-background-color:  #06c71c;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-width: 5;
+    -fx-border-color: #120f70;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+}
+.selected-card > .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 22;
+    -fx-font-family: Comfortaa SemiBold;
+}
+
+.selectorcard:hover {
+    -fx-opacity: 1;
+}

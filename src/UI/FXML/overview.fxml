@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane fx:controller="UI.Controllers.OverviewController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="264.0" prefWidth="453.0">
+               <children>
+                  <Label text="Allgemeines Wohl: " style="-fx-font-family:  Comfortaa SemiBold" >
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Allgemeinsituation:" style="-fx-font-family:  Comfortaa SemiBold">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Personal:" style="-fx-font-family:  Comfortaa SemiBold">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Behandlung:" style="-fx-font-family:  Comfortaa SemiBold">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="310.0" prefWidth="201.0">
+               <children>
+                  <Label fx:id="wellbeingLabel" text="GUT" style="-fx-font-family:  Comfortaa SemiBold">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="commonLabel" text="GUT" style="-fx-font-family:  Comfortaa SemiBold">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="staffLabel" text="GUT" style="-fx-font-family:  Comfortaa SemiBold">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="treatmentLabel" text="GUT" style="-fx-font-family:  Comfortaa SemiBold">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <left>
+      <Pane prefHeight="464.0" prefWidth="127.0" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <BorderPane prefHeight="136.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label text="Zusammenfassung" BorderPane.alignment="CENTER" style="-fx-font-family:  Comfortaa SemiBold">
+               <font>
+                  <Font name="Comfortaa SemiBold" size="27.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <MFXButton fx:id="doneButton" onAction="#submitRating" buttonType="RAISED" depthLevel="LEVEL5" prefHeight="101.0" prefWidth="205.0" style="-fx-background-color: #06c71c; -fx-border-radius: 20; -fx-background-radius: 20; -fx-text-fill: #ffffff; -fx-font-size: 27; -fx-font-family: Comfortaa SemiBold" text="Bestätigen" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </bottom>
+</BorderPane>

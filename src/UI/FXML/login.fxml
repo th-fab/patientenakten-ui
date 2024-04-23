@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="764.0" prefWidth="1096.0" style="-fx-background-color: #ffffff; -fx-border-width: 4; -fx-border-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controllers.LoginController">
+   <top>
+      <BorderPane prefHeight="90.0" prefWidth="600.0" style="-fx-background-color: #5391db; -fx-border-color: #ffffff; -fx-border-width: 0;" BorderPane.alignment="CENTER">
+         <center>
+            <Label fx:id="labelAnmeldung" style="-fx-font-family: Comfortaa SemiBold;" text="Anmeldung" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <MFXTextField fx:id="loginText" alignment="CENTER" caretVisible="false" floatMode="BORDER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="202.0" prefWidth="554.0" promptText="Patientennummer" style="-fx-text-overrun: CENTER; -fx-text-alignment: CENTER; -fx-alignment: CENTER; -fx-background-radius: 40; -fx-border-radius: 40; -fx-font-family: Comfortaa SemiBold; -fx-font-size: 55;" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="60.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </MFXTextField>
+         </center>
+         <top>
+            <BorderPane prefHeight="141.0" prefWidth="1096.0" style="-fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #ffffff; -fx-background-color: #ffffff; -fx-background-radius: 20;" BorderPane.alignment="CENTER">
+               <center>
+                  <Label style="-fx-font-family: Comfortaa SemiBold;" text="Bitte geben Sie Ihre Patientennummer ein&#10;und klicken Sie auf 'Anmelden' um den Bewertungsvorgang zu starten!" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </center>
+               <BorderPane.margin>
+                  <Insets top="15.0" />
+               </BorderPane.margin>
+            </BorderPane>
+         </top>
+      </BorderPane>
+   </center>
+   <bottom>
+      <BorderPane prefHeight="266.0" prefWidth="1096.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <top>
+            <MFXButton fx:id="loginButton" buttonType="RAISED" depthLevel="LEVEL5" onAction="#loadRatingPage" prefHeight="147.0" prefWidth="410.0" style="-fx-background-color: #5391db; -fx-text-fill: #ffffff; -fx-background-radius: 20; -fx-font-family: Comfortaa SemiBold; -fx-font-size: 44;" text="Anmelden" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Comfortaa SemiBold" size="44.0" />
+               </font>
+               <effect>
+                  <DropShadow height="56.58" radius="25.5675" width="47.69" />
+               </effect>
+               <BorderPane.margin>
+                  <Insets top="15.0" />
+               </BorderPane.margin>
+            </MFXButton>
+         </top>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </BorderPane>
+   </bottom>
+</BorderPane>

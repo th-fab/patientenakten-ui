@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXProgressBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp_rating" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffffff; -fx-border-width: 4; -fx-border-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controllers.RatingController">
+   <top>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="107.0" prefWidth="600.0" style="-fx-background-color: #5391db; -fx-border-color: #ffffff; -fx-border-width: 0;" BorderPane.alignment="CENTER">
+         <center>
+            <Label text="Bewertungen" textFill="WHITE" BorderPane.alignment="CENTER" style="-fx-font-family: Comfortaa SemiBold;">
+               <font>
+                  <Font name="Comfortaa SemiBold" size="37.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="119.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <center>
+            <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="currentPageLabel" alignment="CENTER" prefHeight="47.0" prefWidth="270.0" text="Schritt 1/x" textAlignment="CENTER" style="-fx-font-family: Comfortaa SemiBold">
+                     <font>
+                        <Font name="Comfortaa SemiBold" size="40.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <MFXProgressBar fx:id="progressBar" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="331.0" progress="0.42" style="-fx-background-color: #5391db; -fx-border-radius: 10; -fx-background-radius: 10; -fx-progress-color: #5391db; -fx-accent: #5391db;">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin></MFXProgressBar>
+               </children>
+            </VBox>
+         </center>
+         <left>
+            <MFXButton fx:id="buttonPrevious" buttonType="RAISED" depthLevel="LEVEL5" onAction="#viewPrevious" prefHeight="64.0" prefWidth="139.0" rippleAnimateBackground="false" style="-fx-background-color: #06c71c; -fx-background-radius: 20; -fx-font-family: Comfortaa SemiBold; -fx-text-fill: #ffffff; -fx-font-size: 20" text="Zurück" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="20.0" top="40.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="Comfortaa SemiBold" size="13.0" />
+               </font>
+            </MFXButton>
+         </left>
+         <right>
+            <MFXButton fx:id="buttonNext" buttonType="RAISED" depthLevel="LEVEL5" onAction="#viewNext" prefHeight="64.0" prefWidth="139.0" rippleAnimateBackground="false" style="-fx-background-color: #06c71c; -fx-background-radius: 20; -fx-font-family: Comfortaa SemiBold; -fx-text-fill: #ffffff; -fx-font-size: 20;" text="Weiter" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Comfortaa SemiBold" size="13.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets right="20.0" top="40.0" />
+               </BorderPane.margin>
+            </MFXButton>
+         </right>
+      </BorderPane>
+   </bottom>
+</BorderPane>
